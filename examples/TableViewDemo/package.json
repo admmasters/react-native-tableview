@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node_modules/react-native/packager/packager.sh"
+    "start": "node_modules/react-native/packager/packager.sh",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "react-native": "^0.49.0",
-    "react-native-tableview": "^1.0.4"
-  }
+    "react-native": "^0.63.0",
+    "react-native-tableview": "^1.0.4",
+    "snyk": "^1.460.0"
+  },
+  "snyk": true
 }
